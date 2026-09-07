@@ -1,0 +1,8 @@
+name = "guyprompting"
+compatibility_date = "2026-09-01"
+pages_build_output_dir = "public"
+
+[[d1_databases]]
+binding = "HITS"
+database_name = "guyprompting-hits"
+database_id = "REPLACE_AFTER_CREATE"

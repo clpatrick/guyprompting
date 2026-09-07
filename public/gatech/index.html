@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Patrick Reynolds · for Georgia Tech</title>
+<meta name="description" content="Patrick Reynolds, candidate for Executive Director, AI Enablement &amp; Acceleration at Georgia Tech: what I have built, how I govern it, and how I lead.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#F7F5F0; --paper-2:#EFEBE3; --line:#D9D3C7; --line-soft:#E6E1D7;
+  --ink:#172233; --ink-2:#3F4B5C; --ink-3:#6E7886;
+  --navy:#15314E; --navy-ink:#FFFFFF;
+  --brass:#8A6A22; --brass-soft:#F0E6CD;
+  --good:#2E6A4E; --bad:#A33A2A;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#121821; --paper-2:#182130; --line:#2A3546; --line-soft:#212B3A;
+    --ink:#E9E6DF; --ink-2:#BFC5CE; --ink-3:#8791A0;
+    --navy:#DCE6F2; --navy-ink:#121821;
+    --brass:#D8B45C; --brass-soft:#3A3018;
+    --good:#6FB58F; --bad:#E07B69;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#121821; --paper-2:#182130; --line:#2A3546; --line-soft:#212B3A;
+  --ink:#E9E6DF; --ink-2:#BFC5CE; --ink-3:#8791A0;
+  --navy:#DCE6F2; --navy-ink:#121821;
+  --brass:#D8B45C; --brass-soft:#3A3018;
+  --good:#6FB58F; --bad:#E07B69;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55}
+a{color:var(--navy);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+nav.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
+nav.top .brand{font-family:var(--mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);text-decoration:none}
+nav.top ul{list-style:none;display:flex;gap:22px;margin:0;padding:0}
+nav.top li a{font-size:14px;color:var(--ink-2);text-decoration:none}
+nav.top li a:hover{color:var(--navy);text-decoration:underline}
+
+header.hero{padding:64px 0 48px;border-bottom:1px solid var(--line)}
+.hero .eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-bottom:14px}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(34px,5.2vw,54px);line-height:1.08;margin:0;text-wrap:balance;max-width:20ch}
+.hero .principles{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:38px}
+.principle{border-top:3px solid var(--brass);padding-top:14px}
+.principle h2{font-family:var(--serif);font-size:24px;font-weight:600;margin:0 0 8px;line-height:1.2}
+.principle p{margin:0;color:var(--ink-2);max-width:42ch}
+@media (max-width:700px){.hero .principles{grid-template-columns:1fr}}
+
+section{padding:48px 0;border-bottom:1px solid var(--line)}
+section h2.sec{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin:0 0 20px;font-weight:500}
+.prose{max-width:66ch;color:var(--ink-2)}
+.prose p{margin:0 0 16px}
+.prose p:last-child{margin:0}
+.prose strong{color:var(--ink);font-weight:600}
+
+.work{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.work article{background:var(--paper);padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px}
+.work article h3{font-family:var(--serif);font-size:21px;font-weight:600;margin:0;line-height:1.25}
+.work article p{margin:0;color:var(--ink-2);font-size:15px}
+.work .meta{font-family:var(--mono);font-size:12px;color:var(--ink-3);display:flex;gap:14px;flex-wrap:wrap}
+.work .meta b{color:var(--brass);font-weight:500}
+.work a.more{margin-top:auto;font-size:14px;font-weight:500}
+@media (max-width:700px){.work{grid-template-columns:1fr}}
+
+.also{columns:2;column-gap:32px;max-width:900px;margin:0;padding-left:18px;color:var(--ink-2);font-size:15px}
+.also li{break-inside:avoid;margin-bottom:8px}
+@media (max-width:700px){.also{columns:1}}
+
+.contact{display:flex;flex-wrap:wrap;gap:12px 28px;font-size:15px}
+.contact a{font-weight:500}
+footer{padding:28px 0 56px;font-family:var(--mono);font-size:12.5px;color:var(--ink-3);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* governed-run simulator */
+.sim{border:1px solid var(--line);background:var(--paper-2);padding:22px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:24px}
+@media (max-width:760px){.sim{grid-template-columns:1fr}}
+.sim h3{font-family:var(--serif);font-size:22px;font-weight:600;margin:0 0 6px;line-height:1.2}
+.sim .lede{font-size:14.5px;color:var(--ink-2);margin:0 0 16px;max-width:48ch}
+.sim fieldset{border:0;padding:0;margin:0 0 14px}
+.sim legend{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px}
+.sim .opts{display:flex;flex-direction:column;gap:6px}
+.sim label.opt{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--ink);cursor:pointer;padding:8px 10px;border:1px solid var(--line);background:var(--paper)}
+.sim label.opt:has(input:checked){border-color:var(--brass);box-shadow:inset 3px 0 0 var(--brass)}
+.sim label.opt input{margin-top:3px;accent-color:var(--brass)}
+.sim label.opt small{display:block;color:var(--ink-3);font-size:12.5px}
+.sim button{font:inherit;font-weight:600;font-size:14px;padding:10px 16px;background:var(--navy);color:var(--navy-ink);border:0;cursor:pointer}
+.sim button:hover{filter:brightness(1.08)}
+.sim .log{background:var(--paper);border:1px solid var(--line);padding:14px 16px;min-height:280px;max-height:420px;overflow:auto;font-family:var(--mono);font-size:12.5px;line-height:1.6;color:var(--ink-2)}
+.sim .log .step{display:flex;gap:10px;padding:4px 0;border-bottom:1px dashed var(--line-soft);opacity:0;transform:translateY(3px);animation:stepin .35s ease-out forwards}
+.sim .log .step:last-child{border-bottom:0}
+@keyframes stepin{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.sim .log .step{animation:none;opacity:1;transform:none}}
+.sim .log .who{flex:0 0 78px;color:var(--ink-3)}
+.sim .log .ok{color:var(--good)}.sim .log .halt{color:var(--bad);font-weight:500}.sim .log .ask{color:var(--brass);font-weight:500}
+.sim .log .empty{color:var(--ink-3)}
+.govnote{margin-top:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.govnote div{background:var(--paper);padding:14px 16px;font-size:14px;color:var(--ink-2)}
+.govnote b{display:block;color:var(--ink);font-weight:600;margin-bottom:4px}
+
+.tblwrap{overflow-x:auto;border:1px solid var(--line);background:var(--paper-2)}
+table.map{border-collapse:collapse;width:100%;font-size:14.5px}
+table.map th{text-align:left;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);font-weight:500;padding:10px 14px;border-bottom:1px solid var(--line)}
+table.map td{padding:12px 14px;border-bottom:1px solid var(--line-soft);vertical-align:top;color:var(--ink-2)}
+table.map td:first-child{color:var(--ink);font-weight:600;width:34%}
+table.map tr:last-child td{border-bottom:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="top" aria-label="Site">
+  <a class="brand" href="/">Guy Prompting · Patrick Reynolds</a>
+  <ul>
+    <li><a href="#why">The role</a></li>
+    <li><a href="#how">Try it</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <div class="eyebrow">Prepared for the Georgia Tech OIT search committee · Executive Director, AI Enablement &amp; Acceleration · Job 302406</div>
+  <h1>Enable a campus to put AI to work, with governance people can actually follow.</h1>
+  <div class="principles">
+    <div class="principle">
+      <h2>People matter.</h2>
+      <p>Technology exists to take the grinding work off people so they can do the work only people can do. The aim is never a smaller team. It is the team you already have, twice as effective.</p>
+    </div>
+    <div class="principle">
+      <h2>Applications must be AI friendly.</h2>
+      <p>An organization adopts AI well when its systems expose real, governed interfaces, its identities carry least privilege, and its data handling is written down. Most of what goes wrong with AI is an access problem.</p>
+    </div>
+  </div>
+</header>
+
+
+
+<section id="why">
+  <h2 class="sec">What the posting asks for, and where I have done it</h2>
+  <div class="tblwrap"><table class="map">
+    <tr><th>The posting</th><th>Where I have done it</th></tr>
+    <tr><td>Institution-wide digital, data, and AI strategy</td><td>Writing a county government's AI and AI-governance roadmap now, alongside its IT and network team; twenty-two years of multi-year technology roadmaps and budgets for local governments and regulated firms.</td></tr>
+    <tr><td>Enterprise data and AI governance: ethical, secure, compliant</td><td>A production agent platform where a person approves every operation before an agent runs alone, a supervising agent halts deviations, and every inference call is attributed. Provider selection on U.S. residency, no-training, and zero retention.</td></tr>
+    <tr><td>Hands-on agentic AI: agents, workflows, orchestration, multi-model</td><td>Built it: supervisor and worker agents, rehearsal-then-manifest workflows, five inference tiers, an Anthropic-compatible gateway so standard tooling runs on local or cloud models.</td></tr>
+    <tr><td>MCP concepts, AI gateways, secure enterprise integration</td><td>MCP tool servers that let a local model operate a remote-management platform under a scoped service account with a full audit log; an API gateway enforcing identity, roles, and quotas in front of cloud models; delegated-first Microsoft 365 with a fail-closed confused-deputy guard.</td></tr>
+    <tr><td>Practical coding literacy; Claude Code and modern AI tooling</td><td>Daily. The engineering process below runs teams of people and agents through audit-first work packets, isolated worktrees, and a test gate on every pull request; 3,277 tests on the flagship platform.</td></tr>
+    <tr><td>Leading technical staff; budgets; KPIs; risk and continuity</td><td>Founder and president of a fifteen-person security-first IT firm since 2004; breach monitoring and response since 2019; business continuity planning as a service line; P&amp;L for twenty-two years.</td></tr>
+    <tr><td>Research-university setting</td><td>Not on my resume, and I say so. What I bring instead: a measured research practice with pre-registered decisions, numbered journals, and retractions on the record, including a preprint on lossless language-model compression (below), and the habit of learning an institution's culture from the people who live in it.</td></tr>
+  </table></div>
+</section>
+
+<section id="how">
+  <h2 class="sec">How a governed run works · try it</h2>
+  <div class="sim">
+    <div>
+      <h3>Give an agent a task. Watch what it is allowed to do.</h3>
+      <p class="lede">This is the pattern behind the platform: skills are tiered, a person approves the plan before the agent runs alone, and a supervising agent halts anything off-plan. Pick a task and a tier, then run it.</p>
+      <form id="simForm">
+        <fieldset>
+          <legend>Task</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="task" value="triage" checked><span>Review flagged email across client tenants<small>Read the flags, dismiss obvious false positives, open a ticket with the evidence.</small></span></label>
+            <label class="opt"><input type="radio" name="task" value="reboot"><span>Fix a slow workstation<small>Inspect the endpoint, clear a stuck service, restart it.</small></span></label>
+            <label class="opt"><input type="radio" name="task" value="offboard"><span>Off-board a departed employee<small>Disable sign-in, forward mail, remove from groups, wipe the phone.</small></span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Skill tier granted to the agent</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="tier" value="1" checked><span>L1 · safe reads<small>Look, never touch.</small></span></label>
+            <label class="opt"><input type="radio" name="tier" value="2"><span>L2 · reversible writes<small>Actions that can be undone.</small></span></label>
+            <label class="opt"><input type="radio" name="tier" value="3"><span>L3 · full API<small>Everything the vendor allows. Rarely granted; always watched.</small></span></label>
+          </div>
+        </fieldset>
+        <button type="submit">Run the scene</button>
+      </form>
+    </div>
+    <div class="log" id="simLog" aria-live="polite"><div class="empty">The run log appears here.</div></div>
+  </div>
+  <div class="govnote">
+    <div><b>Rehearsal first</b>The agent walks the plan with zero live calls and lists every operation it intends. A person approves that list once.</div>
+    <div><b>Closed world</b>Unattended runs may only perform approved operations, reads included. Anything else is blocked or parked.</div>
+    <div><b>Director on set</b>A supervising agent screens intent on the actual arguments, not just the tool name, and halts deviations.</div>
+    <div><b>Every call has a name</b>Inference is attributed to an agent, so cost and behavior are always traceable.</div>
+  </div>
+</section>
+
+<section id="work">
+  <h2 class="sec">Selected work</h2>
+  <div class="work">
+    <article>
+      <h3>Governed AI-agent platform</h3>
+      <div class="meta"><b>Production</b><span>2026</span><span>33 client organizations</span></div>
+      <p>Technicians build and run AI agents against real business systems under tiered least-privilege skills. A person approves every operation before the agent runs unattended; a supervising agent halts anything outside the approved plan. Five inference tiers under U.S.-residency rules; every call attributed for cost. 3,277 automated tests.</p>
+      <a class="more" href="https://github.com/clpatrick/governed-agent-platform">Architecture and security posture →</a>
+    </article>
+    <article>
+      <h3>County AI and AI-governance roadmap</h3>
+      <div class="meta"><b>In progress</b><span>2026</span><span>Georgia county government</span></div>
+      <p>Working alongside a county IT and network team on systems, network, and security operations while helping them write an AI roadmap they can actually follow: where sensitive data is exposed today, tiered guardrails, and the staff-augmentation uses worth doing first.</p>
+      <a class="more" href="#contact">Ask about this engagement →</a>
+    </article>
+    <article>
+      <h3>Shepherd: an AI-operable endpoint control plane</h3>
+      <div class="meta"><b>Prototype</b><span>2026</span><span>.NET 8</span></div>
+      <p>A self-hosted replacement for commercial remote-management tools, designed so an AI agent can operate a fleet safely: tenant isolation on every row, signed tasking, a hash-chained audit log, and ten written architecture decisions.</p>
+      <a class="more" href="https://github.com/clpatrick/shepherd">Decisions on record →</a>
+    </article>
+    <article>
+      <h3>Engineering with people and agents</h3>
+      <div class="meta"><b>In daily use</b><span>2026</span><span>process + ledger</span></div>
+      <p>The written operating model behind the platform: audit-first work packets, isolated worktrees, worker, verifier, and adversarial-reviewer roles, a test gate on every pull request, and a reservation ledger so concurrent agent sessions share one machine without collisions.</p>
+      <a class="more" href="https://github.com/clpatrick/agentic-engineering-process">The process, and the ledger's source →</a>
+    </article>
+  </div>
+</section>
+
+
+<section id="demos">
+  <h2 class="sec">Live demonstrations</h2>
+  <div class="prose">
+    <p>Live, sign-in-gated demonstrations are being added here: a local language model running on the workstation under my desk, the governed agent platform with a fictional client set, and the endpoint control plane driving a simulated fleet. Each runs as a separate instance with synthetic data, the safe-read tier by default, nightly reset, and an identity check in front. The demos are governed the same way the real systems are, because that is the point.</p>
+  </div>
+</section>
+
+<section id="research">
+  <h2 class="sec">Research, with the negative results kept</h2>
+  <ul class="also">
+    <li><b>Preprint:</b> "Lossless Language-Model Text Compression on One Consumer GPU: Ratio, Throughput, and the Determinism Gate" (2026). Measured frontier, determinism diagnosis, and a journal of corrections. Full text on this site shortly.</li>
+    <li>Local inference of a 284-billion-parameter mixture-of-experts model on one workstation: decode raised from 7.3 to about 20 tokens per second; 190+ numbered journal entries and pre-registered decisions.</li>
+    <li>Lossless LLM-driven text compression: 0.882 bits per byte on enwik8 against 7-Zip's 1.989, with a measured ratio-versus-speed frontier.</li>
+    <li>A deterministic context manager for long agent sessions: byte-exact log, lean resident window, 93–100% recall of exact facts at 90–99% token reduction, claim narrowed after an adversarial audit.</li>
+    <li>On-device model selection for phones: an MMLU-Pro harness projected to memory bandwidth across 298 candidate models.</li>
+    <li>A self-hosted, Claude-Code-class coding studio with an Anthropic-compatible endpoint, so standard agent tooling runs on local or cloud models.</li>
+    <li>A de-identified calibration corpus built from real platform traffic, with two adversarial privacy audits; the first said "do not ship."</li>
+  </ul>
+</section>
+
+<section id="about">
+  <h2 class="sec">About</h2>
+  <div class="prose">
+    <p>I'm Patrick Reynolds. Since 2004 I have run <strong>Cross Link Consulting</strong>, a security-first IT firm of about fifteen people serving county and municipal governments, doctors, lawyers, accounting firms, and industrial clients across the Augusta area. We have provided breach monitoring and response since 2019, finding and evicting intruders before data leaves.</p>
+    <p>I founded <strong>Resolute AIM</strong> to help organizations stop asking AI questions and start putting AI to work: guidance, talks, governance, and, when it is needed, the application itself. For the last year I have spent most of my working hours building AI platforms with my own hands, and the lesson is consistent. AI adoption succeeds on identity, access, and data handling long before it succeeds on models.</p>
+    <p>Before any of that: undergraduate study at USC Aiken, technology and electronics training in the U.S. Army, eight years in the Reserve, five years keeping a hospital's clinical equipment running, then the Microsoft certifications that opened the door to systems administration. I hire for character and teach expertise. Serving humbly. Caring well.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="sec">Contact</h2>
+  <div class="contact">
+    <a href="mailto:patrickfromsc@gmail.com">patrickfromsc@gmail.com</a>
+    <a href="https://www.linkedin.com/in/patrickreynolds">LinkedIn</a>
+    <a href="https://github.com/clpatrick">GitHub</a>
+    <a href="https://resoluteaim.com">Resolute AIM</a>
+    <a href="https://crosslinkconsulting.net">Cross Link Consulting</a>
+  </div>
+</section>
+
+<footer>
+  <span>Patrick Reynolds · North Augusta, South Carolina</span>
+  <span>Prepared September 2026 for the Georgia Tech search. Case studies are descriptions, not source.</span>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var form=document.getElementById("simForm"),log=document.getElementById("simLog");
+  var SC={
+    triage:{name:"Review flagged email across client tenants",ops:[
+      {t:1,text:"list flagged messages across 33 tenants (read)"},
+      {t:1,text:"read message headers and detection reasons (read)"},
+      {t:2,text:"dismiss 4 single-group false positives (reversible write)"},
+      {t:2,text:"open a ticket with the catch story (reversible write)"},
+      {t:3,text:"quarantine 1 message tenant-wide (irreversible)"}]},
+    reboot:{name:"Fix a slow workstation",ops:[
+      {t:1,text:"read CPU, memory, top processes on WS-114 (read)"},
+      {t:1,text:"read service state for the print spooler (read)"},
+      {t:2,text:"restart the print spooler service (reversible write)"},
+      {t:3,text:"reboot WS-114 while a user is signed in (irreversible)"}]},
+    offboard:{name:"Off-board a departed employee",ops:[
+      {t:1,text:"read group memberships and mailbox size (read)"},
+      {t:2,text:"disable sign-in and revoke sessions (reversible write)"},
+      {t:2,text:"forward mail to the manager for 30 days (reversible write)"},
+      {t:3,text:"remove from all groups and wipe the mobile device (irreversible)"}]}
+  };
+  function line(who,cls,text){
+    var d=document.createElement("div");d.className="step";
+    var a=document.createElement("span");a.className="who";a.textContent=who;
+    var b=document.createElement("span");b.className=cls||"";b.textContent=text;
+    d.appendChild(a);d.appendChild(b);log.appendChild(d);log.scrollTop=log.scrollHeight;
+  }
+  function run(task,tier){
+    log.textContent="";var sc=SC[task];var steps=[];
+    steps.push(["rehearsal","","scene: "+sc.name+" · tier L"+tier]);
+    steps.push(["rehearsal","","walking the plan with zero live calls…"]);
+    var manifest=sc.ops.filter(function(o){return o.t<=tier});
+    var beyond=sc.ops.filter(function(o){return o.t>tier});
+    manifest.forEach(function(o){steps.push(["manifest","",o.text])});
+    steps.push(["operator","ask","approve "+manifest.length+" operation"+(manifest.length===1?"":"s")+" for unattended runs? → approved"]);
+    steps.push(["run","","locked to the approved manifest"]);
+    manifest.forEach(function(o){steps.push(["agent","ok","✓ "+o.text])});
+    beyond.forEach(function(o){
+      steps.push(["agent","","→ attempts: "+o.text]);
+      steps.push(["director","halt", o.t===3 ? "✕ halted: irreversible action outside the approved manifest. Parked for a person." : "✕ blocked: not in the approved manifest."]);
+    });
+    if(tier===3){steps.push(["director","ask","L3 run: every call screened on its arguments; anything off-plan halts the scene."]);}
+    steps.push(["audit","","run recorded: "+manifest.length+" allowed, "+beyond.length+" refused, cost attributed to the agent."]);
+    var i=0, delay=window.matchMedia("(prefers-reduced-motion: reduce)").matches?0:420;
+    (function next(){if(i>=steps.length)return;var s=steps[i++];line(s[0],s[1],s[2]);setTimeout(next,delay);})();
+  }
+  form.addEventListener("submit",function(e){e.preventDefault();var fd=new FormData(form);run(fd.get("task"),parseInt(fd.get("tier"),10));});
+})();
+</script>
+</body>
+</html>
