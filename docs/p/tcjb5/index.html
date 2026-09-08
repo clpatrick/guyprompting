@@ -204,16 +204,28 @@ table.map tr:last-child td{border-bottom:0}
       <a class="more" href="https://github.com/clpatrick/governed-agent-platform">Architecture and security posture →</a>
     </article>
     <article>
+      <h3>Melon Code: a Claude-Code-class agent on a local model</h3>
+      <div class="meta"><b>Daily use</b><span>2026</span><span>TypeScript · llama.cpp · NVIDIA NIM</span></div>
+      <p>The full coding-agent loop, with tools, a four-mode permission engine, subagents, compaction, and rewind, driving a 284-billion-parameter model on one workstation. An Anthropic-compatible endpoint lets Claude Code itself run on local or hosted open models. KV-cache prefix work cut a warm turn from 36 seconds to 1.3.</p>
+      <a class="more" href="https://github.com/clpatrick/melon-code">What was built and measured →</a>
+    </article>
+    <article>
+      <h3>Local inference at the edge of one GPU</h3>
+      <div class="meta"><b>Research</b><span>2026</span><span>284B mixture-of-experts · RTX 4090</span></div>
+      <p>Decode raised from 7.3 to about 20 tokens per second at a stated fidelity floor. Three speculative-decoding routes (a DSpark confidence-scheduled drafter, a multi-token-prediction head, DFlash) each closed with numbers from derived break-even math; the DSpark paper's prefix-survival gate implemented in llama.cpp for a measured 7.1% gain. 190+ journal entries, pre-registered decisions.</p>
+      <a class="more" href="#research">The research list →</a>
+    </article>
+    <article>
+      <h3>MelonStudio: splitting a model across GPU and CPU by hand</h3>
+      <div class="meta"><b>Complete · negative result</b><span>2025–26</span><span>C# · ONNX Runtime GenAI</span></div>
+      <p>ONNX Runtime won't offload layers the way llama.cpp does, so this built it: graph partitioning at layer boundaries, two orchestrated sessions, pinned memory, a stateful KV cache. Measured honestly (4.4 tokens per second hybrid against 93 GPU-only), the result was to stop and move to llama.cpp. Full source public.</p>
+      <a class="more" href="https://github.com/clpatrick/MelonStudio">Source, benchmarks, and the design note →</a>
+    </article>
+    <article>
       <h3>County AI and AI-governance roadmap</h3>
       <div class="meta"><b>In progress</b><span>2026</span><span>Georgia county government</span></div>
       <p>Working alongside a county IT and network team on systems, network, and security operations while helping them write an AI roadmap they can actually follow: where sensitive data is exposed today, tiered guardrails, and the staff-augmentation uses worth doing first.</p>
       <a class="more" href="#contact">Ask about this engagement →</a>
-    </article>
-    <article>
-      <h3>Shepherd: an AI-operable endpoint control plane</h3>
-      <div class="meta"><b>Prototype</b><span>2026</span><span>.NET 8</span></div>
-      <p>A self-hosted replacement for commercial remote-management tools, designed so an AI agent can operate a fleet safely: tenant isolation on every row, signed tasking, a hash-chained audit log, and ten written architecture decisions.</p>
-      <a class="more" href="https://github.com/clpatrick/shepherd">Decisions on record →</a>
     </article>
     <article>
       <h3>Engineering with people and agents</h3>
@@ -235,6 +247,7 @@ table.map tr:last-child td{border-bottom:0}
 <section id="research">
   <h2 class="sec">Research, with the negative results kept</h2>
   <ul class="also">
+    <li>Shepherd: a self-hosted endpoint control plane and Windows agent with tenant isolation, signed tasking, and a hash-chained audit log, built so an AI agent can operate a fleet safely. Working prototype, ten decision records.</li>
     <li><b>Preprint:</b> "Lossless Language-Model Text Compression on One Consumer GPU: Ratio, Throughput, and the Determinism Gate" (2026). Measured frontier, determinism diagnosis, and a journal of corrections. Full text on this site shortly.</li>
     <li>Local inference of a 284-billion-parameter mixture-of-experts model on one workstation: decode raised from 7.3 to about 20 tokens per second; 190+ numbered journal entries and pre-registered decisions.</li>
     <li>Lossless LLM-driven text compression: 0.882 bits per byte on enwik8 against 7-Zip's 1.989, with a measured ratio-versus-speed frontier.</li>
