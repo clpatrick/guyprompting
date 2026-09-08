@@ -3,9 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex">
-<title>Patrick Reynolds · for Georgia Tech</title>
-<meta name="description" content="Patrick Reynolds, candidate for Executive Director, AI Enablement &amp; Acceleration at Georgia Tech: what I have built, how I govern it, and how I lead.">
+<title>Patrick Reynolds · Guy Prompting</title>
+<meta name="description" content="Patrick Reynolds: AI strategy, governance, and secure implementation for governments, health systems, law firms, and the people who serve them. People matter. Applications must be AI friendly.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 :root{
@@ -104,13 +103,6 @@ footer{padding:28px 0 56px;font-family:var(--mono);font-size:12.5px;color:var(--
 .govnote{margin-top:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
 .govnote div{background:var(--paper);padding:14px 16px;font-size:14px;color:var(--ink-2)}
 .govnote b{display:block;color:var(--ink);font-weight:600;margin-bottom:4px}
-
-.tblwrap{overflow-x:auto;border:1px solid var(--line);background:var(--paper-2)}
-table.map{border-collapse:collapse;width:100%;font-size:14.5px}
-table.map th{text-align:left;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);font-weight:500;padding:10px 14px;border-bottom:1px solid var(--line)}
-table.map td{padding:12px 14px;border-bottom:1px solid var(--line-soft);vertical-align:top;color:var(--ink-2)}
-table.map td:first-child{color:var(--ink);font-weight:600;width:34%}
-table.map tr:last-child td{border-bottom:0}
 </style>
 </head>
 <body>
@@ -119,7 +111,6 @@ table.map tr:last-child td{border-bottom:0}
 <nav class="top" aria-label="Site">
   <a class="brand" href="/">Guy Prompting · Patrick Reynolds</a>
   <ul>
-    <li><a href="#why">The role</a></li>
     <li><a href="#how">Try it</a></li>
     <li><a href="#work">Work</a></li>
     <li><a href="#about">About</a></li>
@@ -128,8 +119,8 @@ table.map tr:last-child td{border-bottom:0}
 </nav>
 
 <header class="hero">
-  <div class="eyebrow">Prepared for the Georgia Tech OIT search committee · Executive Director, AI Enablement &amp; Acceleration · Job 302406</div>
-  <h1>Enable a campus to put AI to work, with governance people can actually follow.</h1>
+  <div class="eyebrow">AI strategy · governance · secure implementation</div>
+  <h1>Put AI to work for your people, with limits and someone watching.</h1>
   <div class="principles">
     <div class="principle">
       <h2>People matter.</h2>
@@ -142,21 +133,6 @@ table.map tr:last-child td{border-bottom:0}
   </div>
 </header>
 
-
-
-<section id="why">
-  <h2 class="sec">What the posting asks for, and where I have done it</h2>
-  <div class="tblwrap"><table class="map">
-    <tr><th>The posting</th><th>Where I have done it</th></tr>
-    <tr><td>Institution-wide digital, data, and AI strategy</td><td>Writing a county government's AI and AI-governance roadmap now, alongside its IT and network team; twenty-two years of multi-year technology roadmaps and budgets for local governments and regulated firms.</td></tr>
-    <tr><td>Enterprise data and AI governance: ethical, secure, compliant</td><td>A production agent platform where a person approves every operation before an agent runs alone, a supervising agent halts deviations, and every inference call is attributed. Provider selection on U.S. residency, no-training, and zero retention.</td></tr>
-    <tr><td>Hands-on agentic AI: agents, workflows, orchestration, multi-model</td><td>Built it: supervisor and worker agents, rehearsal-then-manifest workflows, five inference tiers, an Anthropic-compatible gateway so standard tooling runs on local or cloud models.</td></tr>
-    <tr><td>MCP concepts, AI gateways, secure enterprise integration</td><td>MCP tool servers that let a local model operate a remote-management platform under a scoped service account with a full audit log; an API gateway enforcing identity, roles, and quotas in front of cloud models; delegated-first Microsoft 365 with a fail-closed confused-deputy guard.</td></tr>
-    <tr><td>Practical coding literacy; Claude Code and modern AI tooling</td><td>Daily. The engineering process below runs teams of people and agents through audit-first work packets, isolated worktrees, and a test gate on every pull request; 3,277 tests on the flagship platform.</td></tr>
-    <tr><td>Leading technical staff; budgets; KPIs; risk and continuity</td><td>Founder and president of a fifteen-person security-first IT firm since 2004; breach monitoring and response since 2019; business continuity planning as a service line; P&amp;L for twenty-two years.</td></tr>
-    <tr><td>Research-university setting</td><td>Not on my resume, and I say so. What I bring instead: a measured research practice with pre-registered decisions, numbered journals, and retractions on the record, including a preprint on lossless language-model compression (below), and the habit of learning an institution's culture from the people who live in it.</td></tr>
-  </table></div>
-</section>
 
 <section id="how">
   <h2 class="sec">How a governed run works · try it</h2>
@@ -235,7 +211,6 @@ table.map tr:last-child td{border-bottom:0}
 <section id="research">
   <h2 class="sec">Research, with the negative results kept</h2>
   <ul class="also">
-    <li><b>Preprint:</b> "Lossless Language-Model Text Compression on One Consumer GPU: Ratio, Throughput, and the Determinism Gate" (2026). Measured frontier, determinism diagnosis, and a journal of corrections. Full text on this site shortly.</li>
     <li>Local inference of a 284-billion-parameter mixture-of-experts model on one workstation: decode raised from 7.3 to about 20 tokens per second; 190+ numbered journal entries and pre-registered decisions.</li>
     <li>Lossless LLM-driven text compression: 0.882 bits per byte on enwik8 against 7-Zip's 1.989, with a measured ratio-versus-speed frontier.</li>
     <li>A deterministic context manager for long agent sessions: byte-exact log, lean resident window, 93–100% recall of exact facts at 90–99% token reduction, claim narrowed after an adversarial audit.</li>
@@ -267,7 +242,7 @@ table.map tr:last-child td{border-bottom:0}
 
 <footer>
   <span>Patrick Reynolds · North Augusta, South Carolina</span>
-  <span>Prepared September 2026 for the Georgia Tech search. Case studies are descriptions, not source.</span>
+  <span>Case studies are descriptions, not source. Client names appear only with permission.</span>
 </footer>
 
 </div>
@@ -321,6 +296,5 @@ table.map tr:last-child td{border-bottom:0}
   form.addEventListener("submit",function(e){e.preventDefault();var fd=new FormData(form);run(fd.get("task"),parseInt(fd.get("tier"),10));});
 })();
 </script>
-<script>(function(){var h=location.hostname;if(h==="guyprompting.com"||h==="www.guyprompting.com"||/\.pages\.dev$/.test(h))return;try{navigator.sendBeacon?fetch("https://guyprompting.pages.dev/api/hit",{method:"POST",mode:"cors",keepalive:true,headers:{"content-type":"application/json"},body:JSON.stringify({path:location.pathname,referrer:document.referrer})}).catch(function(){}):0}catch(e){}})();</script>
 </body>
 </html>
