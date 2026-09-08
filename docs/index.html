@@ -68,6 +68,7 @@ section h2.sec{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;tex
 .work .meta{font-family:var(--mono);font-size:12px;color:var(--ink-3);display:flex;gap:14px;flex-wrap:wrap}
 .work .meta b{color:var(--brass);font-weight:500}
 .work a.more{margin-top:auto;font-size:14px;font-weight:500}
+.work article:last-child:nth-child(odd){grid-column:1/-1}
 @media (max-width:700px){.work{grid-template-columns:1fr}}
 
 .also{columns:2;column-gap:32px;max-width:900px;margin:0;padding-left:18px;color:var(--ink-2);font-size:15px}
@@ -173,6 +174,13 @@ footer{padding:28px 0 56px;font-family:var(--mono);font-size:12.5px;color:var(--
 <section id="work">
   <h2 class="sec">Selected work</h2>
   <div class="work">
+
+    <article>
+      <h3>A phone-sized model, built from nothing on one desk</h3>
+      <div class="meta"><b>In progress</b><span>Sept 2026</span><span>Qwen 4-class MoE · iPhone Air</span></div>
+      <p>A mixture-of-experts language model with the Qwen3.8-Flash-Next architecture family (Gated DeltaNet and sparse attention, gated residual, an n-gram table, a multi-token-prediction head), sized to the iPhone Air's 2.5 GB safe memory tier, started from random weights, taught by distillation from Qwen3.8 27B, with DSpark and MTP speculation measured on the phone with reasoning on. Every decision pre-registered; the journal is the deliverable.</p>
+      <a class="more" href="#research">Follow the journal →</a>
+    </article>
     <article>
       <h3>Governed AI-agent platform</h3>
       <div class="meta"><b>Production</b><span>2026</span><span>33 client organizations</span></div>
