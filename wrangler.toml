@@ -5,4 +5,4 @@ pages_build_output_dir = "public"
 [[d1_databases]]
 binding = "HITS"
 database_name = "guyprompting-hits"
-database_id = "REPLACE_AFTER_CREATE"
+database_id = "62ba36ab-8b15-4690-b2c7-07deee2703e6"

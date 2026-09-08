@@ -321,5 +321,6 @@ table.map tr:last-child td{border-bottom:0}
   form.addEventListener("submit",function(e){e.preventDefault();var fd=new FormData(form);run(fd.get("task"),parseInt(fd.get("tier"),10));});
 })();
 </script>
+<script>(function(){var h=location.hostname;if(h==="guyprompting.com"||h==="www.guyprompting.com"||/\.pages\.dev$/.test(h))return;try{navigator.sendBeacon?fetch("https://guyprompting.pages.dev/api/hit",{method:"POST",mode:"cors",keepalive:true,headers:{"content-type":"application/json"},body:JSON.stringify({path:location.pathname,referrer:document.referrer})}).catch(function(){}):0}catch(e){}})();</script>
 </body>
 </html>
