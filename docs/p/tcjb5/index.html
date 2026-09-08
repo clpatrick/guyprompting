@@ -218,8 +218,8 @@ table.map tr:last-child td{border-bottom:0}
     <article>
       <h3>MelonStudio: splitting a model across GPU and CPU by hand</h3>
       <div class="meta"><b>Complete · negative result</b><span>2025–26</span><span>C# · ONNX Runtime GenAI</span></div>
-      <p>ONNX Runtime won't offload layers the way llama.cpp does, so this built it: graph partitioning at layer boundaries, two orchestrated sessions, pinned memory, a stateful KV cache. Measured honestly (4.4 tokens per second hybrid against 93 GPU-only), the result was to stop and move to llama.cpp. Full source public.</p>
-      <a class="more" href="https://github.com/clpatrick/MelonStudio">Source, benchmarks, and the design note →</a>
+      <p>ONNX Runtime won't offload layers the way llama.cpp does, so this built it: graph partitioning at layer boundaries, two orchestrated sessions, pinned memory, a stateful KV cache. Measured honestly (4.4 tokens per second hybrid against 93 GPU-only), the result was to stop and move to llama.cpp.</p>
+      <a class="more" href="https://github.com/clpatrick/onnx-hybrid-inference-study">Design, benchmarks, and the negative result →</a>
     </article>
     <article>
       <h3>County AI and AI-governance roadmap</h3>
