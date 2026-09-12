@@ -127,14 +127,14 @@ const work = [
     decision: "The decision that mattered: no agent runs unattended until a person has approved the exact list of operations it may perform.",
     body: "Technicians build and run AI agents against real business systems under tiered least-privilege skills. A human in the loop approves every operation before the agent runs alone; a supervising agent halts anything outside the approved plan. Five inference tiers under U.S.-residency rules; every call attributed for cost. 3,277 automated tests.",
     href: "https://github.com/clpatrick/governed-agent-platform", link: "Architecture and security posture" },
-  { n: "02", title: "The Catalog: 260 work tools scored for AI-friendliness", status: "Live", meta: "2026 · resoluteaim.com · public",
-    decision: "The decision that mattered: publish the rubric. A score you cannot inspect is just another opinion.",
-    body: "Every tool in the catalog gets a 0–100 AI-friendliness score from the same seven-part rubric, covering whether the software will connect to an AI working on your behalf, hand over its data, and do so safely. Tiers: AI-Native, AI-Ready, AI-Limited. A stack check scores the tools an organization already pays for in about a minute, with no sign-up. Published scores are verified against vendor documentation and re-reviewed at least every six months. No vendor pays for a score.",
-    href: "https://resoluteaim.com/catalog/", link: "Open the catalog" },
-  { n: "03", title: "County AI and AI-governance roadmap", status: "In progress", meta: "2026 · Georgia county government",
+  { n: "02", title: "County AI and AI-governance roadmap", status: "In progress", meta: "2026 · Georgia county government",
     decision: "The decision that mattered: write the roadmap with the county's own IT team, not for them.",
     body: "Working alongside a county IT and network team on systems, network, and security operations while helping them write an AI roadmap they can follow: where sensitive data is exposed today, tiered guardrails, in-house inference with controls and visibility, and the staff-augmentation uses worth doing first.",
     href: "/contact/", link: "Ask about this engagement" },
+  { n: "03", title: "The Catalog: 260 work tools scored for AI-friendliness", status: "Live", meta: "2026 · resoluteaim.com · public",
+    decision: "The decision that mattered: publish the rubric. A score you cannot inspect is just another opinion.",
+    body: "Every tool in the catalog gets a 0–100 AI-friendliness score from the same seven-part rubric, covering whether the software will connect to an AI working on your behalf, hand over its data, and do so safely. Tiers: AI-Native, AI-Ready, AI-Limited. A stack check scores the tools an organization already pays for in about a minute, with no sign-up. Published scores are verified against vendor documentation and re-reviewed at least every six months. No vendor pays for a score.",
+    href: "https://resoluteaim.com/catalog/", link: "Open the catalog" },
   { n: "04", title: "Melon Code: a Claude-Code-class agent on a local model", status: "Daily use", meta: "2026 · TypeScript · llama.cpp · NVIDIA NIM",
     decision: "The decision that mattered: run the whole coding-agent loop on a model we own, and point Claude Code at it to learn how the loop really works.",
     body: "The full coding-agent loop, with tools, a four-mode permission engine, subagents, compaction, and rewind, driving a 284-billion-parameter model on one workstation. An Anthropic-compatible endpoint lets Claude Code itself run on local or hosted open models. KV-cache prefix work cut a warm turn from 36 seconds to 1.3.",
@@ -261,8 +261,8 @@ const beliefs = `
   <div class="sechead"><div><div class="eyebrow">What that has produced</div><p class="big">Three outcomes, then the rest.</p></div>
   <div class="strip">
     <a href="/work/#w01"><span class="n">01</span><p><strong>Story Maker.</strong> A broadly capable, well-governed AI platform in production for 33 client organizations, where a human in the loop approves every operation before an agent runs alone.</p></a>
-    <a href="/work/#w03"><span class="n">02</span><p><strong>A county's AI roadmap.</strong> AI and AI-governance, with in-house inference, safely implemented with controls and visibility, written with the county's own IT team.</p></a>
-    <a href="/work/#w02"><span class="n">03</span><p><strong>The Catalog.</strong> A public AI-friendliness scorecard: 260 workplace tools scored 0–100 on a published seven-part rubric, with a one-minute stack check for the tools you already pay for.</p></a>
+    <a href="/work/#w02"><span class="n">02</span><p><strong>A county's AI roadmap.</strong> AI and AI-governance, with in-house inference, safely implemented with controls and visibility, written with the county's own IT team.</p></a>
+    <a href="/work/#w03"><span class="n">03</span><p><strong>The Catalog.</strong> A public AI-friendliness scorecard: 260 workplace tools scored 0–100 on a published seven-part rubric, with a one-minute stack check for the tools you already pay for.</p></a>
   </div></div>
 </section>
 
