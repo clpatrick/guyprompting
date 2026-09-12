@@ -133,31 +133,36 @@ footer .close{font-family:var(--script);font-size:24px;color:var(--orange)}
     </div>
     <div class="row" id="w02">
       <div class="num">02</div>
-      <div><h3>County AI and AI-governance roadmap</h3><div class="m">2026 · Georgia county government</div><p class="d">The decision that mattered: write the roadmap with the county's own IT team, not for them.</p><p>Working alongside a county IT and network team on systems, network, and security operations while helping them write an AI roadmap they can follow: where sensitive data is exposed today, tiered guardrails, in-house inference with controls and visibility, and the staff-augmentation uses worth doing first.</p><a class="more" href="/contact/">Ask about this engagement →</a></div>
-      <div class="st">In progress</div>
+      <div><h3>The Catalog: 260 work tools scored for AI-friendliness</h3><div class="m">2026 · resoluteaim.com · public</div><p class="d">The decision that mattered: publish the rubric. A score you cannot inspect is just another opinion.</p><p>Every tool in the catalog gets a 0–100 AI-friendliness score from the same seven-part rubric, covering whether the software will connect to an AI working on your behalf, hand over its data, and do so safely. Tiers: AI-Native, AI-Ready, AI-Limited. A stack check scores the tools an organization already pays for in about a minute, with no sign-up. Published scores are verified against vendor documentation and re-reviewed at least every six months. No vendor pays for a score.</p><a class="more" href="https://resoluteaim.com/catalog/">Open the catalog →</a></div>
+      <div class="st">Live</div>
     </div>
     <div class="row" id="w03">
       <div class="num">03</div>
-      <div><h3>Melon Code: a Claude-Code-class agent on a local model</h3><div class="m">2026 · TypeScript · llama.cpp · NVIDIA NIM</div><p class="d">The decision that mattered: run the whole coding-agent loop on a model we own, and point Claude Code at it to learn how the loop really works.</p><p>The full coding-agent loop, with tools, a four-mode permission engine, subagents, compaction, and rewind, driving a 284-billion-parameter model on one workstation. An Anthropic-compatible endpoint lets Claude Code itself run on local or hosted open models. KV-cache prefix work cut a warm turn from 36 seconds to 1.3.</p><a class="more" href="https://github.com/clpatrick/melon-code">What was built and measured →</a></div>
-      <div class="st">Daily use</div>
+      <div><h3>County AI and AI-governance roadmap</h3><div class="m">2026 · Georgia county government</div><p class="d">The decision that mattered: write the roadmap with the county's own IT team, not for them.</p><p>Working alongside a county IT and network team on systems, network, and security operations while helping them write an AI roadmap they can follow: where sensitive data is exposed today, tiered guardrails, in-house inference with controls and visibility, and the staff-augmentation uses worth doing first.</p><a class="more" href="/contact/">Ask about this engagement →</a></div>
+      <div class="st">In progress</div>
     </div>
     <div class="row" id="w04">
       <div class="num">04</div>
-      <div><h3>Local inference at the edge of one GPU</h3><div class="m">2026 · 284B mixture-of-experts · RTX 4090</div><p class="d">The decision that mattered: measure before optimizing. Three speculative-decoding routes closed with break-even math; one small change kept.</p><p>Decode raised from 7.3 to about 20 tokens per second at a stated fidelity floor. A DSpark confidence-scheduled drafter, a multi-token-prediction head, and DFlash each closed with numbers; the DSpark paper's prefix-survival gate implemented in llama.cpp for a measured 7.1% gain. 190+ journal entries, pre-registered decisions.</p><a class="more" href="/journal/">The research list →</a></div>
-      <div class="st">Research</div>
+      <div><h3>Melon Code: a Claude-Code-class agent on a local model</h3><div class="m">2026 · TypeScript · llama.cpp · NVIDIA NIM</div><p class="d">The decision that mattered: run the whole coding-agent loop on a model we own, and point Claude Code at it to learn how the loop really works.</p><p>The full coding-agent loop, with tools, a four-mode permission engine, subagents, compaction, and rewind, driving a 284-billion-parameter model on one workstation. An Anthropic-compatible endpoint lets Claude Code itself run on local or hosted open models. KV-cache prefix work cut a warm turn from 36 seconds to 1.3.</p><a class="more" href="https://github.com/clpatrick/melon-code">What was built and measured →</a></div>
+      <div class="st">Daily use</div>
     </div>
     <div class="row" id="w05">
       <div class="num">05</div>
-      <div><h3>A phone-sized model, built from nothing on one desk</h3><div class="m">Sept 2026 · Qwen 4-class MoE · iPhone Air</div><p class="d">The decision that mattered: start from random weights and a 27B teacher, pre-register everything, publish the journal.</p><p>A mixture-of-experts language model in the Qwen3.8-Flash-Next architecture family, sized to the iPhone Air's 2.5 GB safe memory tier, taught by distillation from Qwen3.8 27B, with DSpark and MTP speculation measured on the phone with reasoning on.</p><a class="more" href="/journal/">Follow the journal →</a></div>
-      <div class="st">In progress</div>
+      <div><h3>Local inference at the edge of one GPU</h3><div class="m">2026 · 284B mixture-of-experts · RTX 4090</div><p class="d">The decision that mattered: measure before optimizing. Three speculative-decoding routes closed with break-even math; one small change kept.</p><p>Decode raised from 7.3 to about 20 tokens per second at a stated fidelity floor. A DSpark confidence-scheduled drafter, a multi-token-prediction head, and DFlash each closed with numbers; the DSpark paper's prefix-survival gate implemented in llama.cpp for a measured 7.1% gain. 190+ journal entries, pre-registered decisions.</p><a class="more" href="/journal/">The research list →</a></div>
+      <div class="st">Research</div>
     </div>
     <div class="row" id="w06">
       <div class="num">06</div>
-      <div><h3>MelonStudio: splitting a model across GPU and CPU by hand</h3><div class="m">2025–26 · C# · ONNX Runtime GenAI</div><p class="d">The decision that mattered: stop. A negative result measured honestly, and the reason later work moved to llama.cpp.</p><p>ONNX Runtime won't offload layers the way llama.cpp does, so this built it: graph partitioning at layer boundaries, two orchestrated sessions, pinned memory, a stateful KV cache. Measured at 4.4 tokens per second hybrid against 93 GPU-only, the result was to stop.</p><a class="more" href="https://github.com/clpatrick/onnx-hybrid-inference-study">Design, benchmarks, and the negative result →</a></div>
-      <div class="st">Complete · negative result</div>
+      <div><h3>A phone-sized model, built from nothing on one desk</h3><div class="m">Sept 2026 · Qwen 4-class MoE · iPhone Air</div><p class="d">The decision that mattered: start from random weights and a 27B teacher, pre-register everything, publish the journal.</p><p>A mixture-of-experts language model in the Qwen3.8-Flash-Next architecture family, sized to the iPhone Air's 2.5 GB safe memory tier, taught by distillation from Qwen3.8 27B, with DSpark and MTP speculation measured on the phone with reasoning on.</p><a class="more" href="/journal/">Follow the journal →</a></div>
+      <div class="st">In progress</div>
     </div>
     <div class="row" id="w07">
       <div class="num">07</div>
+      <div><h3>MelonStudio: splitting a model across GPU and CPU by hand</h3><div class="m">2025–26 · C# · ONNX Runtime GenAI</div><p class="d">The decision that mattered: stop. A negative result measured honestly, and the reason later work moved to llama.cpp.</p><p>ONNX Runtime won't offload layers the way llama.cpp does, so this built it: graph partitioning at layer boundaries, two orchestrated sessions, pinned memory, a stateful KV cache. Measured at 4.4 tokens per second hybrid against 93 GPU-only, the result was to stop.</p><a class="more" href="https://github.com/clpatrick/onnx-hybrid-inference-study">Design, benchmarks, and the negative result →</a></div>
+      <div class="st">Complete · negative result</div>
+    </div>
+    <div class="row" id="w08">
+      <div class="num">08</div>
       <div><h3>Engineering with people and agents</h3><div class="m">2026 · process + ledger</div><p class="d">The decision that mattered: write the operating model down so people and agents work the same way.</p><p>Audit-first work packets, isolated worktrees, worker, verifier, and adversarial-reviewer roles, a test gate on every pull request, and a reservation ledger so concurrent agent sessions share one machine without collisions.</p><a class="more" href="https://github.com/clpatrick/agentic-engineering-process">The process, and the ledger's source →</a></div>
       <div class="st">In daily use</div>
     </div>
