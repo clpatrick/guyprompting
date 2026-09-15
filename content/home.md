@@ -51,3 +51,13 @@ If you lead an agency, a government, a hospital, a firm, or a campus, and you ne
 
 Serving humbly. Leading fruitfully.
 
+
+## DRAFT — Army section (Patrick to edit; not built until approved). Proposed placement: between "What I believe" and "Cross Link Consulting".
+
+### U.S. Army Reserve · Biomedical Equipment Specialist
+I joined the Army at twenty, and it gave me three things I still use every day. The first was a year of the most demanding technical training I have ever had, at the U.S. Army Medical Equipment and Optical School (USAMEOS) in Aurora, Colorado [confirm: at Fitzsimons Army Medical Center]: electronics and electrical engineering, and above all troubleshooting, the discipline of dividing a problem quickly and arriving at the fault. That skill has outlived every piece of equipment I learned it on. It is how I lead people, how I run organizations, and how I have worn every hat in the small companies I founded.
+
+The second was the team. You learn in a unit that the person next to you is counting on you, and that serving well means showing up prepared. The third was the discovery, which the Army arranges deliberately, that you are capable of more than you think, and that discipline is what carries you there. Eight years in the Reserve, and I remain grateful to have served.
+
+### Resume line (Earlier career), proposed replacement
+- U.S. Army Reserve, Biomedical Equipment Specialist, eight years. One year of technical training at the U.S. Army Medical Equipment and Optical School (USAMEOS), Aurora, Colorado: electronics, electrical engineering, and fault-isolation troubleshooting, a discipline applied since to leading people and organizations.
