@@ -231,7 +231,15 @@ const beliefs = `
     <p><strong>You are gifted.</strong> And the Lord did not give you gifts just to serve yourself or secure your future: you are gifted to serve your neighbors who need you.</p>
     <p>I have spent most of my working life teaching and discipling engineers, technicians, and now AI builders toward one conviction: what you are gifted at is not just for you. It is for the county clerk who cannot get into her system on a Monday morning, the nurse whose equipment has to work, the small firm that cannot afford to lose a week to a breach. And when we talk AI, our gifts in this field must be invested to help the good guys put AI to work.</p>
     <p>Serving our neighbors is the calling. For those of us who are gifted technically, helping put the technology to work is how we serve others.</p>
-    <p>That is why I hire for values and character, and mentor and teach the technical expertise. Expertise can be taught. The habit of showing up for someone else's problem as if it were your own cannot be, but it can be modeled, and it can be validated. I have watched young technologists become servant-hearted leaders, and that fruitfulness is the most rewarding part. What they accomplish in serving others is fruit multiplied. We call that discipleship, and it is our highest calling.</p>
+    <p>That is why I hire for values and character, and mentor and teach the technical expertise. Expertise can be taught. The habit of showing up for someone else's problem as if it were your own cannot be, but it can be modeled, and it can be validated. I have watched young technologists become servant-hearted leaders, and it is this fruitfulness that is the most rewarding. What they accomplish in serving others is fruit multiplied. We call that discipleship, and it is our highest calling.</p>
+  </div></div>
+</section>
+
+<section id="army">
+  <div class="sechead"><div><div class="eyebrow">U.S. Army and Reserves - Biomedical Equipment Specialist</div><p class="big">Three things I still use every day.</p></div>
+  <div class="prose">
+    <p>I joined the Army at nineteen, and it gave me three things I still use every day. The first was a year of the most demanding technical training I have ever had, at the U.S. Army Medical Equipment and Optical School (USAMEOS) in Aurora, Colorado at Fitzsimons Army Medical Center: electronics and electrical engineering, and above all troubleshooting, the discipline of dividing a problem quickly and arriving at the root cause. That skill has outlived every piece of equipment I learned it on. It is how I lead people, how I run organizations, and how I have mentored every teammate in the companies I founded.</p>
+    <p>The second was the team. You learn in a unit that the person next to you is counting on you, and that serving well may be the difference between life and death. The third was the discovery, which the Army arranges deliberately, that you are capable of more than you think, and that faith, discipline and resolve are what carry you beyond your limits. Eight years in the Reserve, and I remain honored to have served.</p>
   </div></div>
 </section>
 
@@ -241,19 +249,19 @@ const beliefs = `
     <div class="prose" style="margin-bottom:22px"><p>A managed IT and cybersecurity firm of about fifteen people serving doctors, lawyers, county and municipal governments, accounting firms, and industrial clients across the Augusta area. I founded it, led it as CEO and senior engineer for twenty-two years, and stepped into an advisory role in 2026 so the firm runs on its own leadership. Four principles are how we put our gifts to work there.</p></div>
     <ul class="vals">
       <li><b>Humility</b><p>Rapid learning and mentoring, and the other values, start with humility. It is recognizing that we are not yet who we are called to be.</p></li>
-      <li><b>Gratitude</b><p>The people who trust us with their systems are trusting us with their livelihoods. We are thankful to be able to stand in the gap for them.</p></li>
-      <li><b>Empathy</b><p>We don't fix computer systems, we serve people. The problem before us belongs to a person. Let us fix the person's ability to serve, not just close a ticket.</p></li>
-      <li><b>Stewardship</b><p>The work we do is inscrutable, and clients can't ask for, or truly appreciate, the faithful execution that only we can discern. This aim must come from within.</p></li>
+      <li><b>Gratitude</b><p>The people who put their trust in us are trusting us with their livelihoods. We are thankful to be privileged and able to stand in the gap for them.</p></li>
+      <li><b>Empathy</b><p>We don't fix computer systems, we serve people. The problem before us belongs to a person. Let us fix that person's ability to serve, not just close a ticket.</p></li>
+      <li><b>Stewardship</b><p>The work we do is inscrutable, and clients can't ask for, or truly appreciate, the faithful execution that only we can discern. This aim must spring from within.</p></li>
     </ul>
   </div></div>
 </section>
 
 <section id="resoluteaim">
   <div class="sechead"><div><div class="eyebrow">Resolute AIM - founded 2025</div><p class="big">People-first AI in the workplace.</p></div>
-  <div class="prose"><p>Most organizations are too fearful or don't think they are ready. Others are asking AI questions and doing what AI tells them. That is backwards. AI is a powerful tool, not a reliable guide. I founded Resolute AIM to lead organizations through a people-first implementation of AI in the workplace: guidance, governance, talks, and, when it is needed, the application itself, for governments, counties, health systems, law firms, and the businesses in between. Let's stop asking AI questions, let's stop worrying about what the bad guys are doing with it, and let's put AI to work.</p></div></div>
+  <div class="prose"><p>Most organizations are too fearful or don't think they are ready. Others are asking AI questions and doing what AI tells them. That is backwards. AI is a powerful tool, but it is not a reliable guide. I founded Resolute AIM to lead organizations to operationalize AI through a people-first implementation in the workplace: guidance, governance, talks, and, when it is needed, creating the application itself, for governments, counties, health systems, law firms, and the businesses in between. Let's stop asking AI questions, let's stop worrying about what the bad guys are doing with it, and let's put AI to work.</p></div></div>
   <div class="block"><div class="grid">
     <div><div class="lbl">Principle 01</div><h3>People matter.</h3><p>Technologies must be put to work to reduce the impediments and increase the great outcomes that only great people can offer. The aim is never a smaller team. It is the great team you already have, twice as effective.</p></div>
-    <div><div class="lbl">Principle 02</div><h3>Applications must be AI friendly.</h3><p>Application features and marketing do not matter if intelligent tools and AI can't help us maximize the tool. An organization adopts AI well when its systems expose real, governed interfaces that are safe and visible. Most of what goes wrong with AI is not an AI problem. It is an access problem.</p></div>
+    <div><div class="lbl">Principle 02</div><h3>Applications must be AI friendly.</h3><p>Application features and hype do not matter if intelligent tools and AI can't help us maximize the tool. An organization adopts AI well when its systems expose real, governed interfaces that are safe and visible. Most of what goes wrong with AI is not an AI problem. It is an access problem.</p></div>
   </div></div>
 </section>
 
@@ -261,13 +269,13 @@ const beliefs = `
   <div class="sechead"><div><div class="eyebrow">What that has produced</div><p class="big">Three outcomes, then the rest.</p></div>
   <div class="strip">
     <a href="/work/#w01"><span class="n">01</span><p><strong>Story Maker.</strong> A broadly capable, well-governed AI platform in production for 33 client organizations, where a human in the loop approves every operation before an agent runs alone.</p></a>
-    <a href="/work/#w02"><span class="n">02</span><p><strong>A county's AI roadmap.</strong> AI and AI-governance, with in-house inference, safely implemented with controls and visibility, written with the county's own IT team.</p></a>
+    <a href="/work/#w02"><span class="n">02</span><p><strong>A county's AI implementation.</strong> Both local in-house and U.S. datacenter inference, safely implemented with controls and visibility, written with the county's own IT team.</p></a>
     <a href="/work/#w03"><span class="n">03</span><p><strong>The Catalog.</strong> A public AI-friendliness scorecard: 260 workplace tools scored 0-100 on a published seven-part rubric, with a one-minute stack check for the tools you already pay for.</p></a>
   </div></div>
 </section>
 
 <section id="close">
-  <div class="sechead"><div></div><div class="prose"><p>If you lead an agency, a government, a hospital, a firm, or a campus, and you need someone who has built this and led the people who build it, let's grab coffee and see how we can serve our neighbors, together.</p><p style="margin-top:14px"><a class="btn ghost" href="/contact/">Connect over coffee</a></p></div></div>
+  <div class="sechead"><div></div><div class="prose"><p>If you lead an agency, a government, a campus, a hospital, or a firm, and you need someone who has built this and led the people who build it, let's grab coffee and see how we can serve our neighbors, together.</p><p style="margin-top:14px"><a class="btn ghost" href="/contact/">Connect over coffee</a></p></div></div>
 </section>`;
 
 const workRows = work.map(w => `

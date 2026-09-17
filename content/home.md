@@ -53,7 +53,7 @@ Serving humbly. Leading fruitfully.
 
 
 
-## DRAFT - Army section (Patrick to edit; not built until approved). Proposed placement: between "What I believe" and "Cross Link Consulting".
+## U.S. Army section (approved 2026-09-16; built between "What I believe" and "Cross Link Consulting")
 
 ### U.S. Army + Reserves - Biomedical Equipment Specialist
 
