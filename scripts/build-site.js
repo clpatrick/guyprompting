@@ -123,35 +123,35 @@ footer .close{font-family:var(--script);font-size:24px;color:var(--orange)}
 const mark = `<svg viewBox="0 0 44 44" aria-hidden="true"><path d="M8 30 A14 14 0 0 1 36 30 Z" fill="${C.orange}"/><g stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="22" y1="8" x2="22" y2="13"/><line x1="12" y1="12" x2="15" y2="16"/><line x1="32" y1="12" x2="29" y2="16"/></g><line x1="4" y1="34" x2="40" y2="34" stroke="currentColor" stroke-width="2.5"/></svg>`;
 
 const work = [
-  { n: "01", title: "Story Maker: a governed AI-agent platform", status: "Production", meta: "2026 · 33 client organizations",
+  { n: "01", title: "Story Maker: a governed AI-agent platform", status: "Production", meta: "2026 - 33 client organizations",
     decision: "The decision that mattered: no agent runs unattended until a person has approved the exact list of operations it may perform.",
     body: "Technicians build and run AI agents against real business systems under tiered least-privilege skills. A human in the loop approves every operation before the agent runs alone; a supervising agent halts anything outside the approved plan. Five inference tiers under U.S.-residency rules; every call attributed for cost. 3,277 automated tests.",
     href: "https://github.com/clpatrick/governed-agent-platform", link: "Architecture and security posture" },
-  { n: "02", title: "County AI and AI-governance roadmap", status: "In progress", meta: "2026 · Georgia county government",
+  { n: "02", title: "County AI and AI-governance roadmap", status: "In progress", meta: "2026 - Georgia county government",
     decision: "The decision that mattered: write the roadmap with the county's own IT team, not for them.",
     body: "Working alongside a county IT and network team on systems, network, and security operations while helping them write an AI roadmap they can follow: where sensitive data is exposed today, tiered guardrails, in-house inference with controls and visibility, and the staff-augmentation uses worth doing first.",
     href: "/contact/", link: "Ask about this engagement" },
-  { n: "03", title: "The Catalog: 260 work tools scored for AI-friendliness", status: "Live", meta: "2026 · resoluteaim.com · public",
+  { n: "03", title: "The Catalog: 260 work tools scored for AI-friendliness", status: "Live", meta: "2026 - resoluteaim.com - public",
     decision: "The decision that mattered: publish the rubric. A score you cannot inspect is just another opinion.",
-    body: "Every tool in the catalog gets a 0–100 AI-friendliness score from the same seven-part rubric, covering whether the software will connect to an AI working on your behalf, hand over its data, and do so safely. Tiers: AI-Native, AI-Ready, AI-Limited. A stack check scores the tools an organization already pays for in about a minute, with no sign-up. Published scores are verified against vendor documentation and re-reviewed at least every six months. No vendor pays for a score.",
+    body: "Every tool in the catalog gets a 0-100 AI-friendliness score from the same seven-part rubric, covering whether the software will connect to an AI working on your behalf, hand over its data, and do so safely. Tiers: AI-Native, AI-Ready, AI-Limited. A stack check scores the tools an organization already pays for in about a minute, with no sign-up. Published scores are verified against vendor documentation and re-reviewed at least every six months. No vendor pays for a score.",
     href: "https://resoluteaim.com/catalog/", link: "Open the catalog" },
-  { n: "04", title: "Melon Code: a Claude-Code-class agent on a local model", status: "Daily use", meta: "2026 · TypeScript · llama.cpp · NVIDIA NIM",
+  { n: "04", title: "Melon Code: a Claude-Code-class agent on a local model", status: "Daily use", meta: "2026 - TypeScript - llama.cpp - NVIDIA NIM",
     decision: "The decision that mattered: run the whole coding-agent loop on a model we own, and point Claude Code at it to learn how the loop really works.",
     body: "The full coding-agent loop, with tools, a four-mode permission engine, subagents, compaction, and rewind, driving a 284-billion-parameter model on one workstation. An Anthropic-compatible endpoint lets Claude Code itself run on local or hosted open models. KV-cache prefix work cut a warm turn from 36 seconds to 1.3.",
     href: "https://github.com/clpatrick/melon-code", link: "What was built and measured" },
-  { n: "05", title: "Local inference at the edge of one GPU", status: "Research", meta: "2026 · 284B mixture-of-experts · RTX 4090",
+  { n: "05", title: "Local inference at the edge of one GPU", status: "Research", meta: "2026 - 284B mixture-of-experts - RTX 4090",
     decision: "The decision that mattered: measure before optimizing. Three speculative-decoding routes closed with break-even math; one small change kept.",
     body: "Decode raised from 7.3 to about 20 tokens per second at a stated fidelity floor. A DSpark confidence-scheduled drafter, a multi-token-prediction head, and DFlash each closed with numbers; the DSpark paper's prefix-survival gate implemented in llama.cpp for a measured 7.1% gain. 190+ journal entries, pre-registered decisions.",
     href: "/journal/", link: "The research list" },
-  { n: "06", title: "A phone-sized model, built from nothing on one desk", status: "In progress", meta: "Sept 2026 · Qwen 4-class MoE · iPhone Air",
+  { n: "06", title: "A phone-sized model, built from nothing on one desk", status: "In progress", meta: "Sept 2026 - Qwen 4-class MoE - iPhone Air",
     decision: "The decision that mattered: start from random weights and a 27B teacher, pre-register everything, publish the journal.",
     body: "A mixture-of-experts language model in the Qwen3.8-Flash-Next architecture family, sized to the iPhone Air's 2.5 GB safe memory tier, taught by distillation from Qwen3.8 27B, with DSpark and MTP speculation measured on the phone with reasoning on.",
     href: "/journal/", link: "Follow the journal" },
-  { n: "07", title: "MelonStudio: splitting a model across GPU and CPU by hand", status: "Complete · negative result", meta: "2025–26 · C# · ONNX Runtime GenAI",
+  { n: "07", title: "MelonStudio: splitting a model across GPU and CPU by hand", status: "Complete - negative result", meta: "2025-26 - C# - ONNX Runtime GenAI",
     decision: "The decision that mattered: stop. A negative result measured honestly, and the reason later work moved to llama.cpp.",
     body: "ONNX Runtime won't offload layers the way llama.cpp does, so this built it: graph partitioning at layer boundaries, two orchestrated sessions, pinned memory, a stateful KV cache. Measured at 4.4 tokens per second hybrid against 93 GPU-only, the result was to stop.",
     href: "https://github.com/clpatrick/onnx-hybrid-inference-study", link: "Design, benchmarks, and the negative result" },
-  { n: "08", title: "Engineering with people and agents", status: "In daily use", meta: "2026 · process + ledger",
+  { n: "08", title: "Engineering with people and agents", status: "In daily use", meta: "2026 - process + ledger",
     decision: "The decision that mattered: write the operating model down so people and agents work the same way.",
     body: "Audit-first work packets, isolated worktrees, worker, verifier, and adversarial-reviewer roles, a test gate on every pull request, and a reservation ledger so concurrent agent sessions share one machine without collisions.",
     href: "https://github.com/clpatrick/agentic-engineering-process", link: "The process, and the ledger's source" }
@@ -160,7 +160,7 @@ const work = [
 const research = [
   "Local inference of a 284-billion-parameter mixture-of-experts model on one workstation: decode raised from 7.3 to about 20 tokens per second; 190+ numbered journal entries and pre-registered decisions.",
   "Lossless LLM-driven text compression: 0.882 bits per byte on enwik8 against 7-Zip's 1.989, with a measured ratio-versus-speed frontier. Preprint in preparation.",
-  "A deterministic context manager for long agent sessions: byte-exact log, lean resident window, 93–100% recall of exact facts at 90–99% token reduction, claim narrowed after an adversarial audit.",
+  "A deterministic context manager for long agent sessions: byte-exact log, lean resident window, 93-100% recall of exact facts at 90-99% token reduction, claim narrowed after an adversarial audit.",
   "On-device model selection for phones: an MMLU-Pro harness projected to memory bandwidth across 298 candidate models.",
   "Shepherd: a self-hosted endpoint control plane and Windows agent with tenant isolation, signed tasking, and a hash-chained audit log, built so an AI agent can operate a fleet safely. Working prototype, ten decision records.",
   "A de-identified calibration corpus built from real platform traffic, with two adversarial privacy audits; the first said \"do not ship.\""
@@ -171,10 +171,10 @@ var SC={triage:{name:"Review flagged email across client tenants",ops:[{t:1,text
 reboot:{name:"Fix a slow workstation",ops:[{t:1,text:"read CPU, memory, top processes on WS-114 (read)"},{t:1,text:"read service state for the print spooler (read)"},{t:2,text:"restart the print spooler service (reversible write)"},{t:3,text:"reboot WS-114 while a user is signed in (irreversible)"}]},
 offboard:{name:"Off-board a departed employee",ops:[{t:1,text:"read group memberships and mailbox size (read)"},{t:2,text:"disable sign-in and revoke sessions (reversible write)"},{t:2,text:"forward mail to the manager for 30 days (reversible write)"},{t:3,text:"remove from all groups and wipe the mobile device (irreversible)"}]}};
 function line(who,cls,text){var d=document.createElement("div");d.className="step";var a=document.createElement("span");a.className="who";a.textContent=who;var b=document.createElement("span");b.className=cls||"";b.textContent=text;d.appendChild(a);d.appendChild(b);log.appendChild(d);log.scrollTop=log.scrollHeight;}
-function run(task,tier){log.textContent="";var sc=SC[task];var steps=[];steps.push(["rehearsal","","scene: "+sc.name+" · tier L"+tier]);steps.push(["rehearsal","","walking the plan with zero live calls…"]);
+function run(task,tier){log.textContent="";var sc=SC[task];var steps=[];steps.push(["rehearsal","","scene: "+sc.name+" - tier L"+tier]);steps.push(["rehearsal","","walking the plan with zero live calls..."]);
 var manifest=sc.ops.filter(function(o){return o.t<=tier});var beyond=sc.ops.filter(function(o){return o.t>tier});manifest.forEach(function(o){steps.push(["manifest","",o.text])});
-steps.push(["operator","ask","approve "+manifest.length+" operation"+(manifest.length===1?"":"s")+" for unattended runs? → approved"]);steps.push(["run","","locked to the approved manifest"]);
-manifest.forEach(function(o){steps.push(["agent","ok","✓ "+o.text])});beyond.forEach(function(o){steps.push(["agent","","→ attempts: "+o.text]);steps.push(["director","halt",o.t===3?"✕ halted: irreversible action outside the approved manifest. Parked for a person.":"✕ blocked: not in the approved manifest."]);});
+steps.push(["operator","ask","approve "+manifest.length+" operation"+(manifest.length===1?"":"s")+" for unattended runs? -> approved"]);steps.push(["run","","locked to the approved manifest"]);
+manifest.forEach(function(o){steps.push(["agent","ok","OK "+o.text])});beyond.forEach(function(o){steps.push(["agent","","-> attempts: "+o.text]);steps.push(["director","halt",o.t===3?"X halted: irreversible action outside the approved manifest. Parked for a person.":"X blocked: not in the approved manifest."]);});
 if(tier===3){steps.push(["director","ask","L3 run: every call screened on its arguments; anything off-plan halts the scene."]);}
 steps.push(["audit","","run recorded: "+manifest.length+" allowed, "+beyond.length+" refused, cost attributed to the agent."]);
 var i=0,delay=window.matchMedia("(prefers-reduced-motion: reduce)").matches?0:420;(function next(){if(i>=steps.length)return;var s=steps[i++];line(s[0],s[1],s[2]);setTimeout(next,delay);})();}
@@ -203,7 +203,7 @@ ${noindex ? '<meta name="robots" content="noindex">' : ""}
 ${body}
 </main>
 <footer class="bar"><div class="wrap">
-  <div class="fine">Patrick Reynolds · North Augusta, South Carolina${foot ? " · " + foot : ""}</div>
+  <div class="fine">Patrick Reynolds - North Augusta, South Carolina${foot ? " - " + foot : ""}</div>
   <div class="close">Serving humbly. Leading fruitfully.</div>
   <div class="fine">Case studies are descriptions, not source. Client names appear only with permission.</div>
 </div></footer>
@@ -215,9 +215,9 @@ ${current === "/try/" || current === "gt" ? `<script>${simJS}</script>` : ""}
 
 const heroHtml = (gt) => `
 <header class="hero">
-  <div class="photo"><div class="frame">${hasHeadshot ? '<img src="/assets/headshot.jpg" alt="Patrick Reynolds" width="800" height="1000">' : '<span class="caps" style="font-size:12px;color:var(--ink2)">Photo coming</span>'}</div><div class="cap">Patrick Reynolds · North Augusta, S.C.</div></div>
+  <div class="photo"><div class="frame">${hasHeadshot ? '<img src="/assets/headshot.jpg" alt="Patrick Reynolds" width="800" height="1000">' : '<span class="caps" style="font-size:12px;color:var(--ink2)">Photo coming</span>'}</div><div class="cap">Patrick Reynolds - North Augusta, S.C.</div></div>
   <div class="intro">
-    <div class="eyebrow">${gt ? "Prepared for the Georgia Tech OIT search committee · Executive Director, AI Enablement &amp; Acceleration · Job 302406" : "AI strategy · governance · people-first implementation"}</div>
+    <div class="eyebrow">${gt ? "Prepared for the Georgia Tech OIT search committee - Executive Director, AI Enablement &amp; Acceleration - Job 302406" : "AI strategy - governance - people-first implementation"}</div>
     <h1>I invest in people, helping them put their technical gifts to work, so together we can humbly serve our neighbors who need us.</h1>
     <p class="lede">Twenty-two years leading a security-first IT firm for local organizations and governments that are like-minded in service to our neighbors. The last several years building AI platforms by hand. Now leading organizations through a people-first implementation of AI.</p>
     <div class="cta"><a class="btn primary" href="${gt ? "#why" : "/work/"}">See the work</a><a class="btn ghost" href="/contact/">Connect over coffee</a></div>
@@ -236,7 +236,7 @@ const beliefs = `
 </section>
 
 <section id="crosslink">
-  <div class="sechead"><div><div class="eyebrow">Cross Link Consulting · founded 2004</div><p class="big">How we put our gifts to work.</p></div>
+  <div class="sechead"><div><div class="eyebrow">Cross Link Consulting - founded 2004</div><p class="big">How we put our gifts to work.</p></div>
   <div>
     <div class="prose" style="margin-bottom:22px"><p>A managed IT and cybersecurity firm of about fifteen people serving doctors, lawyers, county and municipal governments, accounting firms, and industrial clients across the Augusta area. I founded it, led it as CEO and senior engineer for twenty-two years, and stepped into an advisory role in 2026 so the firm runs on its own leadership. Four principles are how we put our gifts to work there.</p></div>
     <ul class="vals">
@@ -249,7 +249,7 @@ const beliefs = `
 </section>
 
 <section id="resoluteaim">
-  <div class="sechead"><div><div class="eyebrow">Resolute AIM · founded 2025</div><p class="big">People-first AI in the workplace.</p></div>
+  <div class="sechead"><div><div class="eyebrow">Resolute AIM - founded 2025</div><p class="big">People-first AI in the workplace.</p></div>
   <div class="prose"><p>Most organizations are too fearful or don't think they are ready. Others are asking AI questions and doing what AI tells them. That is backwards. AI is a powerful tool, not a reliable guide. I founded Resolute AIM to lead organizations through a people-first implementation of AI in the workplace: guidance, governance, talks, and, when it is needed, the application itself, for governments, counties, health systems, law firms, and the businesses in between. Let's stop asking AI questions, let's stop worrying about what the bad guys are doing with it, and let's put AI to work.</p></div></div>
   <div class="block"><div class="grid">
     <div><div class="lbl">Principle 01</div><h3>People matter.</h3><p>Technologies must be put to work to reduce the impediments and increase the great outcomes that only great people can offer. The aim is never a smaller team. It is the great team you already have, twice as effective.</p></div>
@@ -262,7 +262,7 @@ const beliefs = `
   <div class="strip">
     <a href="/work/#w01"><span class="n">01</span><p><strong>Story Maker.</strong> A broadly capable, well-governed AI platform in production for 33 client organizations, where a human in the loop approves every operation before an agent runs alone.</p></a>
     <a href="/work/#w02"><span class="n">02</span><p><strong>A county's AI roadmap.</strong> AI and AI-governance, with in-house inference, safely implemented with controls and visibility, written with the county's own IT team.</p></a>
-    <a href="/work/#w03"><span class="n">03</span><p><strong>The Catalog.</strong> A public AI-friendliness scorecard: 260 workplace tools scored 0–100 on a published seven-part rubric, with a one-minute stack check for the tools you already pay for.</p></a>
+    <a href="/work/#w03"><span class="n">03</span><p><strong>The Catalog.</strong> A public AI-friendliness scorecard: 260 workplace tools scored 0-100 on a published seven-part rubric, with a one-minute stack check for the tools you already pay for.</p></a>
   </div></div>
 </section>
 
@@ -273,7 +273,7 @@ const beliefs = `
 const workRows = work.map(w => `
     <div class="row" id="w${w.n}">
       <div class="num">${w.n}</div>
-      <div><h3>${w.title}</h3><div class="m">${w.meta}</div><p class="d">${w.decision}</p><p>${w.body}</p><a class="more" href="${w.href}">${w.link} →</a></div>
+      <div><h3>${w.title}</h3><div class="m">${w.meta}</div><p class="d">${w.decision}</p><p>${w.body}</p><a class="more" href="${w.href}">${w.link} -></a></div>
       <div class="st">${w.status}</div>
     </div>`).join("");
 
@@ -295,9 +295,9 @@ const simHtml = `
           <label class="opt"><input type="radio" name="task" value="offboard"><span>Off-board a departed employee<small>Disable sign-in, forward mail, remove from groups, wipe the phone.</small></span></label>
         </div></fieldset>
         <fieldset><legend>Skill tier granted to the agent</legend><div class="opts">
-          <label class="opt"><input type="radio" name="tier" value="1" checked><span>L1 · safe reads<small>Look, never touch.</small></span></label>
-          <label class="opt"><input type="radio" name="tier" value="2"><span>L2 · reversible writes<small>Actions that can be undone.</small></span></label>
-          <label class="opt"><input type="radio" name="tier" value="3"><span>L3 · full API<small>Everything the vendor allows. Rarely granted; always watched.</small></span></label>
+          <label class="opt"><input type="radio" name="tier" value="1" checked><span>L1 - safe reads<small>Look, never touch.</small></span></label>
+          <label class="opt"><input type="radio" name="tier" value="2"><span>L2 - reversible writes<small>Actions that can be undone.</small></span></label>
+          <label class="opt"><input type="radio" name="tier" value="3"><span>L3 - full API<small>Everything the vendor allows. Rarely granted; always watched.</small></span></label>
         </div></fieldset>
         <button type="submit">Run the scene</button>
       </form>
@@ -354,15 +354,15 @@ const gtMap = `
 fs.mkdirSync(path.join(docs, "assets"), { recursive: true });
 const write = (rel, html) => { const p = path.join(docs, rel); fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, html); console.log("wrote", rel); };
 
-write("index.html", shell({ title: "Patrick Reynolds · Guy Prompting", desc: "Patrick Reynolds invests in people, helping them put their technical gifts to work so together they can humbly serve their neighbors. AI strategy, governance, and people-first implementation.", current: "/", body: heroHtml(false) + beliefs }));
-write("work/index.html", shell({ title: "Work · Guy Prompting", desc: "Case studies, not source: a governed AI-agent platform, a county AI roadmap, local inference research, and the decisions that mattered.", current: "/work/", body: workBody }));
-write("try/index.html", shell({ title: "Try it · Guy Prompting", desc: "How a governed AI-agent run works: pick a task and a skill tier and watch what the agent is allowed to do.", current: "/try/", body: tryBody }));
-write("journal/index.html", shell({ title: "Journal · Guy Prompting", desc: "Research in the open: a phone-sized model built from nothing, local inference on one GPU, and negative results kept on the record.", current: "/journal/", body: journalBody }));
-write("contact/index.html", shell({ title: "Contact · Guy Prompting", desc: "Connect with Patrick Reynolds over coffee.", current: "/contact/", body: contactBody }));
+write("index.html", shell({ title: "Patrick Reynolds - Guy Prompting", desc: "Patrick Reynolds invests in people, helping them put their technical gifts to work so together they can humbly serve their neighbors. AI strategy, governance, and people-first implementation.", current: "/", body: heroHtml(false) + beliefs }));
+write("work/index.html", shell({ title: "Work - Guy Prompting", desc: "Case studies, not source: a governed AI-agent platform, a county AI roadmap, local inference research, and the decisions that mattered.", current: "/work/", body: workBody }));
+write("try/index.html", shell({ title: "Try it - Guy Prompting", desc: "How a governed AI-agent run works: pick a task and a skill tier and watch what the agent is allowed to do.", current: "/try/", body: tryBody }));
+write("journal/index.html", shell({ title: "Journal - Guy Prompting", desc: "Research in the open: a phone-sized model built from nothing, local inference on one GPU, and negative results kept on the record.", current: "/journal/", body: journalBody }));
+write("contact/index.html", shell({ title: "Contact - Guy Prompting", desc: "Connect with Patrick Reynolds over coffee.", current: "/contact/", body: contactBody }));
 
 const gtPath = fs.readFileSync(path.join(root, "..", "research", "georgia-tech", "portfolio-path.txt"), "utf8").trim().split("=")[1];
-write(`p/${gtPath}/index.html`, shell({ title: "Patrick Reynolds · for Georgia Tech", desc: "Patrick Reynolds, candidate for Executive Director, AI Enablement & Acceleration at Georgia Tech: how I lead, what I have built, and how I govern it.", current: "gt", noindex: true, foot: "Prepared September 2026 for the Georgia Tech search",
+write(`p/${gtPath}/index.html`, shell({ title: "Patrick Reynolds - for Georgia Tech", desc: "Patrick Reynolds, candidate for Executive Director, AI Enablement & Acceleration at Georgia Tech: how I lead, what I have built, and how I govern it.", current: "gt", noindex: true, foot: "Prepared September 2026 for the Georgia Tech search",
   body: heroHtml(true) + gtMap + beliefs.replace(/href="\/work\/#w0(\d)"/g, 'href="#w0$1"') + workBody.replace('style="padding-top:48px"', 'id="work" style="padding-top:8px"') + tryBody.replace('style="padding-top:48px"', 'id="try" style="padding-top:8px"') + contactBody.replace('style="padding-top:48px"', 'id="contact" style="padding-top:8px"') }));
 
 fs.writeFileSync(path.join(docs, "assets", "seal.svg"), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><rect width="44" height="44" fill="${C.nav}"/><path d="M8 30 A14 14 0 0 1 36 30 Z" fill="${C.orange}"/><g stroke="${C.navInk}" stroke-width="2.5" stroke-linecap="round"><line x1="22" y1="8" x2="22" y2="13"/><line x1="12" y1="12" x2="15" y2="16"/><line x1="32" y1="12" x2="29" y2="16"/></g><line x1="4" y1="34" x2="40" y2="34" stroke="${C.navInk}" stroke-width="2.5"/></svg>`);
-console.log("headshot:", hasHeadshot ? "present" : "placeholder", "· resume pdf:", hasResume ? "present" : "absent");
+console.log("headshot:", hasHeadshot ? "present" : "placeholder", " -  resume pdf:", hasResume ? "present" : "absent");

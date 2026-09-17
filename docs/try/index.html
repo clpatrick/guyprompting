@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Try it · Guy Prompting</title>
+<title>Try it - Guy Prompting</title>
 <meta name="description" content="How a governed AI-agent run works: pick a task and a skill tier and watch what the agent is allowed to do.">
 
 <link rel="icon" href="/assets/seal.svg" type="image/svg+xml">
@@ -136,9 +136,9 @@ footer .close{font-family:var(--script);font-size:24px;color:var(--orange)}
           <label class="opt"><input type="radio" name="task" value="offboard"><span>Off-board a departed employee<small>Disable sign-in, forward mail, remove from groups, wipe the phone.</small></span></label>
         </div></fieldset>
         <fieldset><legend>Skill tier granted to the agent</legend><div class="opts">
-          <label class="opt"><input type="radio" name="tier" value="1" checked><span>L1 · safe reads<small>Look, never touch.</small></span></label>
-          <label class="opt"><input type="radio" name="tier" value="2"><span>L2 · reversible writes<small>Actions that can be undone.</small></span></label>
-          <label class="opt"><input type="radio" name="tier" value="3"><span>L3 · full API<small>Everything the vendor allows. Rarely granted; always watched.</small></span></label>
+          <label class="opt"><input type="radio" name="tier" value="1" checked><span>L1 - safe reads<small>Look, never touch.</small></span></label>
+          <label class="opt"><input type="radio" name="tier" value="2"><span>L2 - reversible writes<small>Actions that can be undone.</small></span></label>
+          <label class="opt"><input type="radio" name="tier" value="3"><span>L3 - full API<small>Everything the vendor allows. Rarely granted; always watched.</small></span></label>
         </div></fieldset>
         <button type="submit">Run the scene</button>
       </form>
@@ -154,7 +154,7 @@ footer .close{font-family:var(--script);font-size:24px;color:var(--orange)}
 </section>
 </main>
 <footer class="bar"><div class="wrap">
-  <div class="fine">Patrick Reynolds · North Augusta, South Carolina</div>
+  <div class="fine">Patrick Reynolds - North Augusta, South Carolina</div>
   <div class="close">Serving humbly. Leading fruitfully.</div>
   <div class="fine">Case studies are descriptions, not source. Client names appear only with permission.</div>
 </div></footer>
@@ -163,10 +163,10 @@ var SC={triage:{name:"Review flagged email across client tenants",ops:[{t:1,text
 reboot:{name:"Fix a slow workstation",ops:[{t:1,text:"read CPU, memory, top processes on WS-114 (read)"},{t:1,text:"read service state for the print spooler (read)"},{t:2,text:"restart the print spooler service (reversible write)"},{t:3,text:"reboot WS-114 while a user is signed in (irreversible)"}]},
 offboard:{name:"Off-board a departed employee",ops:[{t:1,text:"read group memberships and mailbox size (read)"},{t:2,text:"disable sign-in and revoke sessions (reversible write)"},{t:2,text:"forward mail to the manager for 30 days (reversible write)"},{t:3,text:"remove from all groups and wipe the mobile device (irreversible)"}]}};
 function line(who,cls,text){var d=document.createElement("div");d.className="step";var a=document.createElement("span");a.className="who";a.textContent=who;var b=document.createElement("span");b.className=cls||"";b.textContent=text;d.appendChild(a);d.appendChild(b);log.appendChild(d);log.scrollTop=log.scrollHeight;}
-function run(task,tier){log.textContent="";var sc=SC[task];var steps=[];steps.push(["rehearsal","","scene: "+sc.name+" · tier L"+tier]);steps.push(["rehearsal","","walking the plan with zero live calls…"]);
+function run(task,tier){log.textContent="";var sc=SC[task];var steps=[];steps.push(["rehearsal","","scene: "+sc.name+" - tier L"+tier]);steps.push(["rehearsal","","walking the plan with zero live calls..."]);
 var manifest=sc.ops.filter(function(o){return o.t<=tier});var beyond=sc.ops.filter(function(o){return o.t>tier});manifest.forEach(function(o){steps.push(["manifest","",o.text])});
-steps.push(["operator","ask","approve "+manifest.length+" operation"+(manifest.length===1?"":"s")+" for unattended runs? → approved"]);steps.push(["run","","locked to the approved manifest"]);
-manifest.forEach(function(o){steps.push(["agent","ok","✓ "+o.text])});beyond.forEach(function(o){steps.push(["agent","","→ attempts: "+o.text]);steps.push(["director","halt",o.t===3?"✕ halted: irreversible action outside the approved manifest. Parked for a person.":"✕ blocked: not in the approved manifest."]);});
+steps.push(["operator","ask","approve "+manifest.length+" operation"+(manifest.length===1?"":"s")+" for unattended runs? -> approved"]);steps.push(["run","","locked to the approved manifest"]);
+manifest.forEach(function(o){steps.push(["agent","ok","OK "+o.text])});beyond.forEach(function(o){steps.push(["agent","","-> attempts: "+o.text]);steps.push(["director","halt",o.t===3?"X halted: irreversible action outside the approved manifest. Parked for a person.":"X blocked: not in the approved manifest."]);});
 if(tier===3){steps.push(["director","ask","L3 run: every call screened on its arguments; anything off-plan halts the scene."]);}
 steps.push(["audit","","run recorded: "+manifest.length+" allowed, "+beyond.length+" refused, cost attributed to the agent."]);
 var i=0,delay=window.matchMedia("(prefers-reduced-motion: reduce)").matches?0:420;(function next(){if(i>=steps.length)return;var s=steps[i++];line(s[0],s[1],s[2]);setTimeout(next,delay);})();}

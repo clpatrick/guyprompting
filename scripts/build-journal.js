@@ -10,7 +10,7 @@ const decisions = decisionsPath && fs.existsSync(decisionsPath) ? marked.parse(f
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${esc(title)} · Patrick Reynolds</title>
+<title>${esc(title)} - Patrick Reynolds</title>
 <meta name="description" content="${esc(purpose)}">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -32,8 +32,8 @@ section h2.sec{font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spa
 .md blockquote{border-left:3px solid var(--brass);margin:0;padding-left:14px;color:var(--ink-2)}
 .note{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink-3);border:1px solid var(--line);padding:10px 12px;margin-top:20px}
 </style></head><body><div class="wrap">
-<nav><a href="/">Guy Prompting · Patrick Reynolds</a></nav>
-<header><div class="eyebrow">Research journal · in progress</div><h1>${esc(title)}</h1><p>${esc(purpose)}</p>
+<nav><a href="/">Guy Prompting - Patrick Reynolds</a></nav>
+<header><div class="eyebrow">Research journal - in progress</div><h1>${esc(title)}</h1><p>${esc(purpose)}</p>
 <div class="note">This page is the project's journal, rendered as-is. Entries are append-only; corrections are new entries that cite the one they correct. Numbers are tagged [M] measured, [D] derived, [U] unverified.</div></header>
 ${decisions ? `<section><h2 class="sec">Pre-registered decisions</h2><div class="md">${decisions}</div></section>` : ""}
 <section><h2 class="sec">Journal</h2><div class="md">${journal}</div></section>
